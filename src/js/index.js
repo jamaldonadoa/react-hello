@@ -11,6 +11,8 @@ import "../styles/index.scss";
 //import your own components
 import { Navbar, Jumbotron, Tarjeta, Footer } from "./component/home.jsx";
 
+// Armo el HTML con los compornentes de home.jsx
+
 function App() {
 	return (
 		<>

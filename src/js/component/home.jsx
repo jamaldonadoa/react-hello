@@ -1,7 +1,8 @@
+//Importo React y Proptypes
 import React from "react";
 import PropTypes from "prop-types";
 
-//create your first component
+//Creo el menú de navegación
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
@@ -52,6 +53,8 @@ export const Navbar = () => {
 	);
 };
 
+//Creo el Jumbotron
+
 export const Jumbotron = () => {
 	return (
 		<div className="jumbotron bg-light p-5 mb-3">
@@ -71,6 +74,8 @@ export const Jumbotron = () => {
 	);
 };
 
+//Creo el modelo de tarjetas
+
 export const Tarjeta = ({ imgUrl, titulo, descripcion }) => {
 	return (
 		<div className="card col-2 mb-5">
@@ -86,6 +91,8 @@ export const Tarjeta = ({ imgUrl, titulo, descripcion }) => {
 	);
 };
 
+//Creo el pie de la página
+
 export const Footer = () => {
 	return (
 		<div className="footer text-center py-3 bg-dark">
@@ -93,6 +100,8 @@ export const Footer = () => {
 		</div>
 	);
 };
+
+// Estas son las variables de las Tarjetas
 
 Tarjeta.propTypes = {
 	imgUrl: PropTypes.string,
