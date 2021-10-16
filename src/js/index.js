@@ -17,11 +17,27 @@ function App() {
 			<Navbar />
 			<div className="container w-90">
 				<Jumbotron />
-				<div className="d-flex justify-content-between mx-5">
-					<Tarjeta imgUrl="https://picsum.photos/id/203/500/325" />
-					<Tarjeta imgUrl="https://picsum.photos/id/1003/500/325" />
-					<Tarjeta imgUrl="https://picsum.photos/id/200/500/325" />
-					<Tarjeta imgUrl="https://picsum.photos/id/143/500/325" />
+				<div className="d-flex justify-content-between">
+					<Tarjeta
+						imgUrl="https://picsum.photos/id/203/500/325"
+						titulo="Titulo1"
+						descripcion="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+					/>
+					<Tarjeta
+						imgUrl="https://picsum.photos/id/1003/500/325"
+						titulo="Titulo2"
+						descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+					/>
+					<Tarjeta
+						imgUrl="https://picsum.photos/id/200/500/325"
+						titulo="Titulo3"
+						descripcion="Etiam erat velit scelerisque in dictum non consectetur a erat"
+					/>
+					<Tarjeta
+						imgUrl="https://picsum.photos/id/143/500/325"
+						titulo="Titulo4"
+						descripcion="Faucibus nisl tincidunt eget nullam non. Scelerisque purus"
+					/>
 				</div>
 			</div>
 			<Footer />

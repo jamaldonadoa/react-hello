@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
-			<div className="container w-75">
+			<div className="container w-90">
 				<div>
 					<a className="navbar-brand" href="#">
 						Start Bootstrap
@@ -54,9 +54,9 @@ export const Navbar = () => {
 
 export const Jumbotron = () => {
 	return (
-		<div className="jumbotron bg-light mx-5 p-5 mb-3">
+		<div className="jumbotron bg-light p-5 mb-3">
 			<h1 className="display-4">A warm welcome!</h1>
-			<p className="lead">
+			<p className="lead text-justify">
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 				Tempora aperiam rerum adipisci non voluptates ratione deleniti
 				inventore quis voluptas reprehenderit animi saepe eaque
@@ -71,16 +71,13 @@ export const Jumbotron = () => {
 	);
 };
 
-export const Tarjeta = ({ imgUrl }) => {
+export const Tarjeta = ({ imgUrl, titulo, descripcion }) => {
 	return (
 		<div className="card col-2 mb-5">
 			<img className="card-img-top" src={imgUrl} alt="Card image cap" />
 			<div className="card-body">
-				<h5 className="card-title">Card title</h5>
-				<p className="card-text">
-					Some quick example text to build on the card title and make
-					up the bulk of the cards content.
-				</p>
+				<h5 className="card-title">{titulo}</h5>
+				<p className="card-text lead text-justify">{descripcion}</p>
 				<a href="#" className="btn btn-primary text-wrap">
 					Find Out More!
 				</a>
@@ -98,5 +95,7 @@ export const Footer = () => {
 };
 
 Tarjeta.propTypes = {
-	imgUrl: PropTypes.string
+	imgUrl: PropTypes.string,
+	titulo: PropTypes.string,
+	descripcion: PropTypes.string
 };
