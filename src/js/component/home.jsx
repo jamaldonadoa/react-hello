@@ -75,10 +75,10 @@ export const Tarjeta = ({ imgUrl, titulo, descripcion }) => {
 	return (
 		<div className="card col-2 mb-5">
 			<img className="card-img-top" src={imgUrl} alt="Card image cap" />
-			<div className="card-body">
+			<div className="card-body d-flex flex-column">
 				<h5 className="card-title">{titulo}</h5>
 				<p className="card-text lead text-justify">{descripcion}</p>
-				<a href="#" className="btn btn-primary text-wrap">
+				<a href="#" className="btn btn-primary text-wrap mt-auto">
 					Find Out More!
 				</a>
 			</div>
