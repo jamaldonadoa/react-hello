@@ -5,30 +5,33 @@ import PropTypes from "prop-types";
 //Creo el menú de navegación
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
-			<div className="container w-90">
-				<div>
-					<a className="navbar-brand" href="#">
-						Start Bootstrap
-					</a>
-					<button
-						className="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-				</div>
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div className="container">
+				<a
+					className="navbar-brand d-flex justify-content-start"
+					href="#">
+					Bootstrap start
+				</a>
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon"></span>
+				</button>
 				<div
-					className="collapse navbar-collapse d-flex flex-row-reverse"
-					id="navbarSupportedContent ">
+					className="collapse navbar-collapse d-md-flex justify-content-end"
+					id="navbarNavDropdown">
 					<ul className="navbar-nav">
-						<li className="nav-item active">
-							<a className="nav-link" href="#">
-								Home <span className="sr-only">(current)</span>
+						<li className="nav-item">
+							<a
+								className="nav-link active"
+								aria-current="page"
+								href="#">
+								Home
 							</a>
 						</li>
 						<li className="nav-item">
@@ -38,7 +41,7 @@ export const Navbar = () => {
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#">
-								Services
+								Service
 							</a>
 						</li>
 						<li className="nav-item">
@@ -57,7 +60,7 @@ export const Navbar = () => {
 
 export const Jumbotron = () => {
 	return (
-		<div className="jumbotron bg-light p-5 mb-3">
+		<div className="jumbotron bg-light">
 			<h1 className="display-4">A warm welcome!</h1>
 			<p className="lead text-justify">
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit.

@@ -17,9 +17,9 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<div className="container w-90">
+			<div className="container">
 				<Jumbotron />
-				<div className="d-flex justify-content-between">
+				<div className="tarjetas d-flex justify-content-between flex-wrap">
 					<Tarjeta
 						imgUrl="https://picsum.photos/id/203/500/325"
 						titulo="Titulo1"
